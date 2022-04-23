@@ -1,0 +1,11 @@
+n=int(input())
+i=1
+flag=0
+while(i<=n):
+    if(n==i*i):
+        flag=1
+    i=i+1
+if(flag==1):
+    print("True")
+else:
+    print("False")
