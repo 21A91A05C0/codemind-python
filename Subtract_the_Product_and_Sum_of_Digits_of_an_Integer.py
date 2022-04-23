@@ -1,0 +1,11 @@
+n=int(input())
+i=1
+mul=1
+sum=0
+while(n>0):
+    d=n%10
+    mul=mul*d
+    sum=sum+d
+    n=n//10
+res=mul-sum
+print(res)
