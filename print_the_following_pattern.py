@@ -1,12 +1,8 @@
 n=int(input())
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if(i<n):
-            if(j==1 or j==i):
-                print("*",end="")
-            else:
-                print(" ",end="")
-        if(i==n and j<=n):
-            print("*",end="")
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(" ",end="")
+    for k in range(0,2*i+1):
+        print("%d"%(i+1),end="")
+    print()
         
-    print()        
