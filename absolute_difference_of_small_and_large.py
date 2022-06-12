@@ -1,0 +1,10 @@
+l=list(map(str,input().split()))
+for i in l:
+    k=min(i)
+    m=max(i)
+   # print(k)
+    #print(m)
+    z=ord(k)
+    j=ord(m)
+    w=abs(z-j)
+    print(w,end=" ")
