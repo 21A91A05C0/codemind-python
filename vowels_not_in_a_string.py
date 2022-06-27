@@ -14,4 +14,3 @@ if(len(s)!=0):
     
 else:
     print("0")
-        
