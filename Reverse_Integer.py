@@ -11,4 +11,3 @@ if(p>0):
     print(r)
 else:
     print(-r)
-    
