@@ -7,4 +7,3 @@ for i in k:
     if i in k1 and i!=" ":
         c=c+1
 print(c)
-        
