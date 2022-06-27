@@ -10,4 +10,3 @@ if(n==rev):
     print("True")
 else:
     print("False")
-    
