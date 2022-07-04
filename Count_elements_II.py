@@ -11,4 +11,3 @@ for i in z:
     if i not in l:
         c=c+1
 print(c)
-        
