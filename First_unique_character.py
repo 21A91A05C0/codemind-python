@@ -13,4 +13,3 @@ for i in range (len(n)):
 if(flag==1):
     print("-1")
         
-   
