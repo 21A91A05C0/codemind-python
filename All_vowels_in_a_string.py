@@ -10,6 +10,3 @@ if(len(k)==len(z)):
     print("True")
 else:
     print("False")
-
-
-        
