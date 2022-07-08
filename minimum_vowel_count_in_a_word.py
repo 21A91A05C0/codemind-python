@@ -9,4 +9,3 @@ for i in n:
             c+=1
     k.append(c)
 print(min(k))
-        
