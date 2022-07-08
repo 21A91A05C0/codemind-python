@@ -9,5 +9,3 @@ for i in range(len(n)):
 if(len(p)==0):
     print("-1")
 print(*(p))
-        
-    
