@@ -1,12 +1,6 @@
-import string
-def ispangram(str):
-   a= "abcdefghijklmnopqrstuvwxyz"
-   for char in a:
-       if char not in str.lower():
-           return False
-   return True
-n= input()
-if(ispangram(n) == True):
-   print("True")
-else:
-   print("False")
+import string, sys
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    alphaset = set(alphabet)
+    return alphaset <= set(str1.lower())
+ 
+print ( ispangram(input())) 
