@@ -1,7 +1,11 @@
-n,m=list(map(int,input().split()))
-if(n-m==1 or m-n==1):
+n,m=map(int,input().split())
+if(n==1 and m==10):
     print("Yes")
-elif((n==10 and m==1) or (m==10 and n==1)):
+elif(m==1 and n==10):
+    print("Yes")
+elif(n-m==1):
+    print("Yes")
+elif(m-n==1):
     print("Yes")
 else:
     print("No")
