@@ -20,4 +20,3 @@ for i in range(1,n):
         break
 if(c==0):
     print(-1)
-            
