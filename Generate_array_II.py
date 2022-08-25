@@ -1,8 +1,7 @@
-n = int(input())
-arr=list(map(int,input().split()))
-res=[]
-for i in range(0,n,2):
-    while(arr[i+1]):
-        res.append(arr[i])
-        arr[i+1]=arr[i+1]-1
-print(*res)
+n=int(input())
+l=list(map(int,input().split()))
+for i in range(0,len(l),2):
+    j=l[i+1]
+    while(j):
+        print(l[i],end=" ")
+        j=j-1
