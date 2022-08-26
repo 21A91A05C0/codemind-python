@@ -1,26 +1,23 @@
-a=list(input().split())
-c=0
-l=len(a)
-vow="aeiouAEIOU"
-for i in range(l):
-    x1=[]
-    x1=sorted(a[i])
+n=input().split(" ")
+t=[]
+for i in n:
+    v=""
+    c=""
+    l=""
+    for j in i:
+        if j in "AEIOUaeiou":
+            v=v+j
+        elif j!=" ":
+            c=c+j
+    c=sorted(c)
     k=0
-    c=0
-    x=[]
-    for j in range(len(x1)):
-        if x1[j] not in vow:
-            x.append(x1[j])
-            k+=1
-    le=len(x)
-    p=[]
-    p=list(a[i])
-    k=0
-    for j in range(0,len(p)):
-        if  p[j] not in vow and k<le:
-            if x[k ] not in vow:
-                p[j]=x[k]
-            k+=1
-    p="".join(p)
-    a[i]=p
-print(" ".join(a))
+    p=0
+    for j in i:
+        if j in "AEIOUaeiou":
+            l=l+v[k]
+            k=k+1
+        elif j!=" ":
+            l=l+c[p]
+            p=p+1
+    t.append(l)
+print(*t)
