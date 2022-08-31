@@ -1,0 +1,11 @@
+t=int(input())
+while(t>0):
+    n=int(input())
+    arr=list(map(int,input().split()))
+    if(arr==sorted(arr)):
+        print(0)
+    else:
+        l=max(arr)
+        k=min(arr)
+        print(l-k)
+    t=t-1
