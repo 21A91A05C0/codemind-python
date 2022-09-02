@@ -1,13 +1,13 @@
-n=input().lower()
+s=input().lower()
 v='aeiou'
-c='bcdfghjklmnpqrstvwxyz'
+c='qwrtypsdfghjklzxcvbnm'
 i=0
-d=0
-j=len(n)-1
+j=len(s)-1
+z=0
 while(i<j):
-    if((n[i] in v and n[j] in c) or (n[i] in c and n[j] in v)):
-
-        d=d+1
+    if((s[i] in v) and (s[j]  in c)or (s[i] in c) and (s[j] in v)):
+        z=z+1
     i=i+1
     j=j-1
-print(d)
+    
+print(z)
