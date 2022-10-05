@@ -1,16 +1,10 @@
-n=input().lower()
-l=""
-for i in n:
-    if(n.count(i)==1):
+s=input().lower()
+s=set(s)
+k=sorted(s)
+l=''
+for i in k:
+    if(i==' '):
+        continue
+    else:
         l=l+i
-l=list(l)
-l.sort()
-l=str(l)
-l=l.replace(" ","")
-l=l.replace(",","")
-l=l.replace("[","")
-l=l.replace("]","")
-l=l.replace("'","")
-
-
 print(l)
